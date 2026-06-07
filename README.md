@@ -122,4 +122,6 @@ Note: Always ensure the system is in the "Enabled" state before attempting to to
 3. Implementation of RTC-based Automation:
    The system is architected to support a real-time clock, which can be expanded to include automated daily routines, customizable appointment reminders, and time-stamped activity logging to enhance the patient's independence like Medication etc.  
 ## Reference  
-WhatsApp Video 2026-06-07 at 18.11.38.mp4   
+https://github.com/user-attachments/assets/441dc235-6f77-425f-bc0e-de0daa45938b   
+
+  
