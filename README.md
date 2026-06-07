@@ -121,3 +121,5 @@ Note: Always ensure the system is in the "Enabled" state before attempting to to
    Present we are having an Emergency Buzzer,but we can improve that particular feature when pressed, triggers an audible alarm and sends a notification to a caregiver’s phone, ensuring rapid assistance when needed.
 3. Implementation of RTC-based Automation:
    The system is architected to support a real-time clock, which can be expanded to include automated daily routines, customizable appointment reminders, and time-stamped activity logging to enhance the patient's independence like Medication etc.  
+## Reference  
+WhatsApp Video 2026-06-07 at 18.11.38.mp4   
