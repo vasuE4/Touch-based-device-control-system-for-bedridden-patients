@@ -26,16 +26,19 @@ This project is an assistive embedded system built on the LPC2148 microcontrolle
 ## Code Execution Flow
 START   
     Initialize LCD, Keypad, UART, SPI (for EEPROM), and External Interrupts  
-    Read stored password from EEPROM  
+    Read stored password from EEPROM 
+        
     LOOP (Main System):  
         IF (m == 1): // Security Check  
             Wait for valid password from Keypad   
             IF (password is correct):  
-                Set m = 0, Display "Unlocked"  
+                Set m = 0, Display "Unlocked"
+                   
         Wait for input from Touch Screen (UART)   
         Convert touch coordinates (x, y, z) to integers  
         IF (Touch is in "Enable/Disable" region):  
             Toggle 'enable' state  
+  
         IF (enable == 1):  
             IF (Touch in "Buzzer" region):  
                 Toggle buzzer, Update hardware  
@@ -43,8 +46,10 @@ START
                 Set fan state (ON/OFF), Update hardware  
             IF (Touch in "Light" region):  
                 Set light state (ON/OFF), Update hardware  
+     
         Update LCD with current states (Touch, Buzzer, Fan, Light)  
     END LOOP  
+       
 ISR (EINT1 - Password Change):  
     Prompt user for current password  
     IF (current password matches EEPROM):  
