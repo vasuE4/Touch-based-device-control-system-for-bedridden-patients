@@ -99,3 +99,10 @@ The system will toggle the state of the selected appliance (ON/OFF) and update t
         * Once verified, you will be prompted to enter and confirm your new password.  
         * The system will automatically save the new password to the EEPROM and return to the main control loop.  
 Note: Always ensure the system is in the "Enabled" state before attempting to toggle appliances via the touch screen. If the system is "Disabled," touch inputs for appliances will be ignored for safety.  
+## Future Improvements  
+1. Remote Monitoring & Connectivity:
+   Integrate a Wi-Fi or Bluetooth module to allow caretakers to monitor appliance status or toggle devices remotely via a smartphone app.
+2. Intelligent Emergency Alerts:
+   Present we are having an Emergency Buzzer,but we can improve that particular feature when pressed, triggers an audible alarm and sends a notification to a caregiver’s phone, ensuring rapid assistance when needed.
+3. Implementation of RTC-based Automation:
+   The system is architected to support a real-time clock, which can be expanded to include automated daily routines, customizable appointment reminders, and time-stamped activity logging to enhance the patient's independence like Medication etc.  
