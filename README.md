@@ -15,8 +15,8 @@ This project is an assistive embedded system built on the LPC2148 microcontrolle
 8. Switch  
 ## System Architecture and Component roles  
 The system is built around the LPC2148, which acts as the intelligent hub for all peripheral interactions. The architecture is designed for reliability, ensuring that user commands are processed securely and executed predictably.   
-1. The Central Controller: LPC2148
-The LPC2148 manages the entire execution flow. It handles:
+1. The Central Controller: LPC2148  
+The LPC2148 manages the entire execution flow. It handles:  
    * Peripheral Management: Managing the communication protocols (UART, SPI, GPIO) required to interface with external hardware.
    * Logic Processing: Running the main control loop for device state management and executing the password-based security check.
    * Interrupt Handling: Managing the EINT1 (External Interrupt) to allow for secure, real-time user-initiated password changes without interrupting standard device operation.
