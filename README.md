@@ -6,7 +6,7 @@ This project is an assistive embedded system built on the LPC2148 microcontrolle
 3. Non-Volatile Memory  
 ## Required Components
 1. LPC2148 Board  
-2. LCD  
+2. LCD(20x4)  
 3. Keypad Matrix  
 4. Resistive Touch Screen(1255)  
 5. EEPROM(AT25LC512)  
