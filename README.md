@@ -123,5 +123,9 @@ Note: Always ensure the system is in the "Enabled" state before attempting to to
    The system is architected to support a real-time clock, which can be expanded to include automated daily routines, customizable appointment reminders, and time-stamped activity logging to enhance the patient's independence like Medication etc.  
 ## Reference  
 https://github.com/user-attachments/assets/441dc235-6f77-425f-bc0e-de0daa45938b   
+<img width="1200" height="1600" alt="WhatsApp Image 2026-06-07 at 20 26 50" src="https://github.com/user-attachments/assets/de11b9dd-a0ab-4a2d-9bab-802ecf0293f8" />
+<img width="1200" height="1600" alt="WhatsApp Image 2026-06-07 at 20 26 50 (1)" src="https://github.com/user-attachments/assets/fdf4dbc3-3356-4a7a-b92c-4473fd8d5878" />
+<img width="1200" height="1600" alt="WhatsApp Image 2026-06-07 at 20 26 51" src="https://github.com/user-attachments/assets/a6be8774-3a2e-401d-a64f-0bfab0c9a995" />
+<img width="1200" height="1600" alt="WhatsApp Image 2026-06-07 at 20 26 51 (1)" src="https://github.com/user-attachments/assets/0e5ff707-2b44-48f7-977c-7e7fa3034d8f" />
 
   
