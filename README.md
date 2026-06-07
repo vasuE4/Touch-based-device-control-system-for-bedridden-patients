@@ -12,7 +12,10 @@ This project is an assistive embedded system built on the LPC2148 microcontrolle
 5. EEPROM(AT25LC512)  
 6. Buzzer  
 7. 2 LED's  
-8. Switch  
+8. Switch
+## Tools   
+Compiler: Keil uVision4   
+Flashing Tools: Flash Magic   
 ## System Architecture and Component roles  
 The system is built around the LPC2148, which acts as the intelligent hub for all peripheral interactions. The architecture is designed for reliability, ensuring that user commands are processed securely and executed predictably.   
 1. The Central Controller: LPC2148  
