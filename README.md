@@ -94,8 +94,8 @@ Once the system is unlocked, the Resistive Touch Screen becomes active.
   Control: Select the desired region on the touch screen for the "Fan" or "Light".   
 The system will toggle the state of the selected appliance (ON/OFF) and update the hardware. The corresponding LED will light up to provide visual confirmation of the device's current status.  
 4. Changing Your Password:  
-      *If you need to update your security credentials, press the physical button connected to the External Interrupt (EINT1) pin p0.3.  
-      *The system will prompt you on the LCD to enter your current password for verification.  
-      *Once verified, you will be prompted to enter and confirm your new password.  
-      *The system will automatically save the new password to the EEPROM and return to the main control loop.  
+        * If you need to update your security credentials, press the physical button connected to the External Interrupt (EINT1) pin p0.3.  
+        * The system will prompt you on the LCD to enter your current password for verification.  
+        * Once verified, you will be prompted to enter and confirm your new password.  
+        * The system will automatically save the new password to the EEPROM and return to the main control loop.  
 Note: Always ensure the system is in the "Enabled" state before attempting to toggle appliances via the touch screen. If the system is "Disabled," touch inputs for appliances will be ignored for safety.  
