@@ -13,6 +13,22 @@ This project is an assistive embedded system built on the LPC2148 microcontrolle
 6. Buzzer  
 7. 2 LED's  
 8. Switch  
+## System Architecture and Component roles  
+The system is built around the LPC2148, which acts as the intelligent hub for all peripheral interactions. The architecture is designed for reliability, ensuring that user commands are processed securely and executed predictably.   
+1. The Central Controller: LPC2148
+The LPC2148 manages the entire execution flow. It handles:
+   * Peripheral Management: Managing the communication protocols (UART, SPI, GPIO) required to interface with external hardware.
+   * Logic Processing: Running the main control loop for device state management and executing the password-based security check.
+   * Interrupt Handling: Managing the EINT1 (External Interrupt) to allow for secure, real-time user-initiated password changes without interrupting standard device operation.
+2. Security & Data Management
+   * Keypad Matrix: Acts as the primary Security Gateway. It provides a tactile interface for the user to authenticate before gaining access to the control interface, preventing accidental or unauthorized operation of home appliances.
+   * SPI EEPROM (AT25LC512): Serves as the Non-Volatile Storage. It holds the user's password securely. By utilizing the SPI (Serial Peripheral Interface) protocol, the microcontroller can quickly read or update this password, ensuring credentials persist even after a complete power loss.
+3. User Interface & Feedback
+   * Resistive Touch Screen: Communicates with the controller via UART (Universal Asynchronous Receiver-Transmitter). This allows the system to receive precise (x, y, z) coordinate data, which the controller maps to specific appliance "buttons." This provides an intuitive way for patients with limited mobility to interact with their environment.
+   * LCD Module: Acts as the Visual Dashboard, providing immediate feedback to the patient. It displays system status (e.g., "Locked" vs. "Unlocked"), confirms password entries, and shows the current operational status of the fans and lights.
+   * Buzzer & LEDs: Provide Multisensory Feedback.
+         * Buzzer: Offers an audible alert to notify the Doctor in case of Emergency.
+         * LEDs: Offer a visual confirmation of device states (e.g., an LED glowing when the fan is active), which is essential for patients who may have hearing or visual impairments.  
 ## Set-up Instructions
 1. Before using the Peripherals you must initialize the peripherals by calling InitLCD(),InitKPM(),InitUART0(),Init_SPI().  
 2. Notes that you must include all the required headers like "LPC21xx.h","string.h" and user defined hearders like "lcd_defines.h","lcd.h","delay.h","types.h","SPI.h","spi_defines.h","defines.h","KPM.h","UART_INT.h","cfgportpinfunc.h","KPM_defines.h".
