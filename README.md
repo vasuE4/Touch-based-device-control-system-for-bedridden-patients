@@ -20,10 +20,10 @@ The LPC2148 manages the entire execution flow. It handles:
    * Peripheral Management: Managing the communication protocols (UART, SPI, GPIO) required to interface with external hardware.
    * Logic Processing: Running the main control loop for device state management and executing the password-based security check.
    * Interrupt Handling: Managing the EINT1 (External Interrupt) to allow for secure, real-time user-initiated password changes without interrupting standard device operation.
-2. Security & Data Management
+2. Security & Data Management:
    * Keypad Matrix: Acts as the primary Security Gateway. It provides a tactile interface for the user to authenticate before gaining access to the control interface, preventing accidental or unauthorized operation of home appliances.
    * SPI EEPROM (AT25LC512): Serves as the Non-Volatile Storage. It holds the user's password securely. By utilizing the SPI (Serial Peripheral Interface) protocol, the microcontroller can quickly read or update this password, ensuring credentials persist even after a complete power loss.
-3. User Interface & Feedback
+3. User Interface & Feedback:
    * Resistive Touch Screen: Communicates with the controller via UART (Universal Asynchronous Receiver-Transmitter). This allows the system to receive precise (x, y, z) coordinate data, which the controller maps to specific appliance "buttons." This provides an intuitive way for patients with limited mobility to interact with their environment.
    * LCD Module: Acts as the Visual Dashboard, providing immediate feedback to the patient. It displays system status (e.g., "Locked" vs. "Unlocked"), confirms password entries, and shows the current operational status of the fans and lights.
    * Buzzer & LEDs: Provide Multisensory Feedback.
@@ -82,20 +82,20 @@ ISR (EINT1 - Password Change):
                 BREAK Loop  
     RETURN from ISR     
 ## How to Use
-1. System Power-Up  
+1. System Power-Up:  
 Upon connecting the power supply after Loading the code into the hardware, the system will initialize all peripherals.   
-2. Authentication (Unlocking)   
+2. Authentication (Unlocking):   
 The system requires authentication to prevent accidental usage.   
 Enter your designated password using the Keypad Matrix.   
 If the password is correct, the LCD will display "Unlocked," and you will gain access to the control interface.  
-3. Operating Appliances  
+3. Operating Appliances:  
 Once the system is unlocked, the Resistive Touch Screen becomes active.  
-Enable: First, touch the "Enable" region to activate the control interface.  
-Control: Select the desired region on the touch screen for the "Fan" or "Light".   
+  Enable: First, touch the "Enable" region to activate the control interface.  
+  Control: Select the desired region on the touch screen for the "Fan" or "Light".   
 The system will toggle the state of the selected appliance (ON/OFF) and update the hardware. The corresponding LED will light up to provide visual confirmation of the device's current status.  
-4. Changing Your Password  
-If you need to update your security credentials, press the physical button connected to the External Interrupt (EINT1) pin p0.3.  
-The system will prompt you on the LCD to enter your current password for verification.  
-Once verified, you will be prompted to enter and confirm your new password.  
-The system will automatically save the new password to the EEPROM and return to the main control loop.  
+4. Changing Your Password:  
+      *If you need to update your security credentials, press the physical button connected to the External Interrupt (EINT1) pin p0.3.  
+      *The system will prompt you on the LCD to enter your current password for verification.  
+      *Once verified, you will be prompted to enter and confirm your new password.  
+      *The system will automatically save the new password to the EEPROM and return to the main control loop.  
 Note: Always ensure the system is in the "Enabled" state before attempting to toggle appliances via the touch screen. If the system is "Disabled," touch inputs for appliances will be ignored for safety.  
