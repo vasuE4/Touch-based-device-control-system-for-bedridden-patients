@@ -1,5 +1,9 @@
 # Touch-based-device-control-system-for-bedridden-patients
 This project is an assistive embedded system built on the LPC2148 microcontroller. It allows bedridden patients with limited mobility to operate household appliances safely and with minimal effort. It uses a secure keypad password check , SPI EEPROM , and a touch screen to easily toggle hardware devices.
+## Features
+1. Secure Access  
+2. User Friendly Control  
+3. Non-Volatile Memory  
 ## Required Components
 1. LPC2148 Board  
 2. LCD  
