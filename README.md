@@ -81,6 +81,20 @@ ISR (EINT1 - Password Change):
                 Restart system logic  
                 BREAK Loop  
     RETURN from ISR     
+## Pin Connections  
+1. Connect P0.1 to the Resistive TOuch Screen(1255) to receive the xyz co-ordinates.  
+2. Connect P0.3 to the switch to raise an External interrupt because P0.3 supports the EINT1 for functionality 4 in LPC2148.
+3. Connect P0.4 to the SCLK pin of the EEPROM(AT25LC512).  
+4. Connect P0.5 to the MISO(Master in-Slave out) of the EEPROM(AT25LC512).
+5. Connect P0.6 to the MOSI(Master out-Slave in) of the EEPROM(AT25LC512).
+6. Connect P0.7 to the CS(Chip Select) of the EEPROM(AT25LC512).
+7. Connect the pin P0.8 to P0.15 to the LCD.
+8. Connect the pin P0.17 to RS(Register Select) of LCD and P0.18 to EN(Enable) pin of LCD.
+9. Connect the pin P0.22 to the LED2 and consider as Light.
+10. Connect the pin P0.23 to the LED1 and consider as Fan.
+11. Connect the pin P0.25 to the Buzzer.
+12. Connect the VCC and GND pin of EEPROM(AT25LC512) to the 3.3V and GND respectively.
+13. Connect the VCC and GND pin of Resistive Touch Screen(1255) to the 3.3V and GND respectively.  
 ## How to Use
 1. System Power-Up:  
 Upon connecting the power supply after Loading the code into the hardware, the system will initialize all peripherals.   
