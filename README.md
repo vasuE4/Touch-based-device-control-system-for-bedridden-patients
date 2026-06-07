@@ -94,7 +94,8 @@ ISR (EINT1 - Password Change):
 10. Connect the pin P0.23 to the LED1 and consider as Fan.
 11. Connect the pin P0.25 to the Buzzer.
 12. Connect the VCC and GND pin of EEPROM(AT25LC512) to the 3.3V and GND respectively.
-13. Connect the VCC and GND pin of Resistive Touch Screen(1255) to the 3.3V and GND respectively.  
+13. Connect the VCC and GND pin of Resistive Touch Screen(1255) to the 3.3V and GND respectively.
+14. Connect the Keypad from the pins P1.16 to P1.23.  
 ## How to Use
 1. System Power-Up:  
 Upon connecting the power supply after Loading the code into the hardware, the system will initialize all peripherals.   
